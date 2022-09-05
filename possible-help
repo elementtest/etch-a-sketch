@@ -1,0 +1,25 @@
+README:::: this is possible help on the project ahead taken from other DOM projects I have done as well as other resources.  just basically a collection of possibly helpful tidbits for the etch-a-sketch project
+
+
+
+
+document.getElementbyId("IDHERE")
+
+document.querySelector(can put class id or any css selector here)
+
+var varName = document.querySelector(whatev);
+
+
+const div = document.createElement('div);
+
+THIS DOES NOT PUT YOUR NEW ELEMENT INTO THE DOM.  IT ONLY CREATES IT INTO MEMORY
+
+This is so that you can manipulate the element by adding styles classes ids text etc before placing it on the page.   you can place the element in the dom with the following methods.  
+
+parentNode.appendChild(childNode) appends the childnode as the last child of the parent node 
+
+
+
+robs video::: goal to write down what he is doing think about it and try to emulate it... not follow along step by step... exact
+
+
