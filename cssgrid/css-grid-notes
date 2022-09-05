@@ -1,0 +1,44 @@
+compare it to what it is most similar to which is flexbox.  
+
+flexbox is a way to layout things in one dimension 
+
+grid is exactly the same that you can lay out the items in two dimensions
+NOT just one dimension
+
+ok so css grid looks like there is just more dimensions to it than flexbox... flexbox is more for doing the nav layout or something and css grid is for the grid
+
+container is the square that wraps all the different things inside of the grid.  
+
+you can have grid gaps in between the items.  
+
+same as flexbox you have to set the display property
+
+
+
+
+display: grid
+
+what to make it to make it an actual grid 
+you need to define
+
+grid-template-columns: <<SPECS HERE>>
+
+you can use any size that is acceptable in css ie rems percentages px etc
+
+grid-template-columns: 200px 100px;
+
+you can use the fraction unit using fr.... fraction unit...
+
+2fr will be twice as much space taken up as 1 fr.  
+
+REPEAT
+
+you can use the repeat you can have 4 columns
+
+just use the repeat command
+
+that is really huge for the project... i mean we have 16 divs and at the start we were going to write out all of them.... 
+
+CODE
+grid-template-columns: repeat(4, 100px);
+
