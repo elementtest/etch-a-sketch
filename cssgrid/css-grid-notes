@@ -61,3 +61,22 @@ grid-column-end: 6;
 
 //similar you can decide how much of the 3rd child wants to take up row wisegrid-row-start: 1;
 grid-row-end: 3;
+
+//there is an easier way to do it... this is spanning across so many columns and so many rows so use SPAN which means to STRETCH ACROSS
+the code below will be the exact same as the code above
+
+.griditem:nth-child(3) {
+grid-column-start: span 3;
+grid-row-start: span 2
+
+//something else you can do too.  you can name your grid lines.. instead of specifying a length you can name it in the grid-template-columns
+
+.container {
+grid-template-columns: 1fr 1fr [head1] 1fr 1fr 1fr [headr]
+
+//now once you have named your grid squares you can just use that name of when to start and when to stop
+.griditem:nth-child(3) {
+grid-column-start: headl;
+grid-column-end: headr;
+
+start to experiment with these start and stop properties
