@@ -1,9 +1,14 @@
+/* styles for css grid here */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 200px);
+}
 
 
 
-
-
-
+/*
+basic style sheet here 
+*/
 *, *::before, *::after {
   box-sizing: border-box;
 }

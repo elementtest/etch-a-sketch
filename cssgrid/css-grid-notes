@@ -16,29 +16,48 @@ same as flexbox you have to set the display property
 
 
 
-display: grid
-
-what to make it to make it an actual grid 
-you need to define
-
-grid-template-columns: <<SPECS HERE>>
-
-you can use any size that is acceptable in css ie rems percentages px etc
-
-grid-template-columns: 200px 100px;
-
-you can use the fraction unit using fr.... fraction unit...
-
-2fr will be twice as much space taken up as 1 fr.  
-
-REPEAT
-
-you can use the repeat you can have 4 columns
-
-just use the repeat command
-
-that is really huge for the project... i mean we have 16 divs and at the start we were going to write out all of them.... 
 
 CODE
+//use display:grid in a grid container to begin.  the grid container will contain all the other boxes that go inside of it.  
+.grid-container {
+	display: grid;
+}
+//repeats 4 columns that are all 100px wide
 grid-template-columns: repeat(4, 100px);
 
+//have a 200px width on left followed by 100px column on the right 
+grid-template-columns: 200px 100px;
+
+//the first column will be two fractions more sizeable than the second one
+grid-template-columns: 2fr 1fr;
+
+//with rows you will have the reverse.  when you specify the px it will be 200px TALL for the first row and 150 px TALL for the seocond row.  so rows will specify the height and columns will specify the width.  this isn't to obvious 
+grid-template-rows: 200px 150px
+
+//if you dont know how large the grid is going to be.  you dont know how many rows you can use auto all of the rows that are not defined will be 150px tall 
+grid-auto-rows: 150px;
+
+
+//if you specify the first row as 150px (tall rows are always tall) but you dont specify the other rows.  the first row will be 150 but the rest will all be 300
+grid-auto-rows: 150px
+grid-template-rows: 200px
+
+//look up minimum and maximum with css grid.  used so it wont cut off stuff if stuff is in the inside 
+
+
+//spacing our rows and columns apart from each other you now have 20px in between all of your rows
+grid-row-gap: 20px;
+
+//spacing columns spaces 10px between all of the columns 
+grid-column-gap: 10px;
+
+//spacing evenly between everything same value for row and column 
+grid-gap: 20px;
+
+//have a 6 by 6 grid of boxes.  you specify the 3rd box on the first row.  and can change the amount of boxes that this one takes up.  this will start at the 3rd child and then take up 3 boxes starts at the beginning which is 3. and ends at 6 which is right before the beginning of 7
+.griditem:nth-child(3) {
+grid-column-start: 3;
+grid-column-end: 6;
+
+//similar you can decide how much of the 3rd child wants to take up row wisegrid-row-start: 1;
+grid-row-end: 3;
