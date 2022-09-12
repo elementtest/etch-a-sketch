@@ -46,10 +46,10 @@ grid-template-rows: 200px
 
 
 //spacing our rows and columns apart from each other you now have 20px in between all of your rows
-grid-row-gap: 20px;
+row-gap: 20px;
 
 //spacing columns spaces 10px between all of the columns 
-grid-column-gap: 10px;
+column-gap: 10px;
 
 //spacing evenly between everything same value for row and column 
 grid-gap: 20px;
@@ -108,4 +108,7 @@ height: 100vh
 //stretch our grid out to fill the full length
 height: 100vh 
 
-//
+//aligning and justifying works almost exactly the same way as flexbox... try doing flexbox froggy again 
+//flexbox and grid WERE DESIGNED TO WORK TOGETHER
+//using flexbox inside grid is one of the best ways to lay out a site!!!!
+//you can use this on almost all browsers.  
