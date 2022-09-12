@@ -73,6 +73,7 @@ grid-row-start: span 2
 
 .container {
 grid-template-columns: 1fr 1fr [head1] 1fr 1fr 1fr [headr]
+LKjlsdjfkldskkjkjk
 
 //now once you have named your grid squares you can just use that name of when to start and when to stop
 .griditem:nth-child(3) {
@@ -80,3 +81,31 @@ grid-column-start: headl;
 grid-column-end: headr;
 
 start to experiment with these start and stop properties
+
+
+MINUTE 14 IN THE VIDEO 
+MINUTE 14 IN THE VIDEO 
+MINUTE 14 IN THE VIDEO 
+
+//make the container go to the center of the screen bringing with it all the boxes 
+
+.grid-container {
+justify-content: center;
+
+//make the container go to the beginning of the line
+
+.grid-container {
+justify-content: start
+
+//make it go to the end 
+justify-content: end
+
+//align content vertically and set a height 
+.grid-cotaainer {
+align-content: center;
+height: 100vh
+
+//stretch our grid out to fill the full length
+height: 100vh 
+
+//

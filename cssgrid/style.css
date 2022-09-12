@@ -2,6 +2,9 @@
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(4, 200px);
+	justify-content: start;
+	align-content: stretch;
+	height: 100vh;
 }
 
 
@@ -10,7 +13,7 @@
 basic style sheet here 
 */
 *, *::before, *::after {
-  box-sizing: border-box;
+  box-sizing: border-box5G;
 }
 
 html, body {
