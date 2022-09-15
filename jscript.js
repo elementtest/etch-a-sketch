@@ -1,3 +1,11 @@
+//SET NUMBER OF SQUARES BUTTON ON TOP OF GRID
+var numberButton = document.querySelector('#numberButton');
+
+numberButton.addEventListener('click', function(DtripD){
+	let numPrompt = prompt('Please enter in the amount of squares');
+});
+
+
 //for loop:  start at zero and do the following actions 256 times
 for(x=0; x<256;x++) {
 	//create element on page and store as var divVe
@@ -18,3 +26,5 @@ for(x=0; x<256;x++) {
 		DtripD.target.style.backgroundColor = "blue";
 	})
 }
+
+//number of squares button 
