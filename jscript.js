@@ -1,6 +1,8 @@
-//for loop:  start at zero and do the following actions 256 times
+//return root css variable from the jstyle.css sheet returns the --grid value value from the :root part of it
 let cssGridValue = window.getComputedStyle(document.documentElement).getPropertyValue('--grid-value');
+//link number button in html to javascript by finding the unique id and using query selector
 let numberButton = document.querySelector('#numberButton');
+//add event listener to the number button will then use it to style the grid based on the user input
 numberButton.addEventListener('click', function(DtripD) {
 	let userInput = prompt('give me a number');
 	let cssGridValue = userInput;
