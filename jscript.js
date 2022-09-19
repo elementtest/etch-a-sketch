@@ -1,13 +1,12 @@
-//SET NUMBER OF SQUARES BUTTON ON TOP OF GRID
-var numberButton = document.querySelector('#numberButton');
-
-numberButton.addEventListener('click', function(DtripD){
-	let numPrompt = prompt('Please enter in the amount of squares');
-});
-
-
 //for loop:  start at zero and do the following actions 256 times
-for(x=0; x<256;x++) {
+let cssGridValue = window.getComputedStyle(document.documentElement).getPropertyValue('--grid-value');
+let numberButton = document.querySelector('#numberButton');
+numberButton.addEventListener('click', function(DtripD) {
+	let userInput = prompt('give me a number');
+	let cssGridValue = userInput;
+
+	console.log(cssGridValue);
+for(x=0; x<userInput*userInput; x++) {
 	//create element on page and store as var divVe
 	var divVe = document.createElement('div');
 	//append element to .container-grid div in html
@@ -24,7 +23,8 @@ for(x=0; x<256;x++) {
 	//when the mouse leaves the background color will be returned to blue
 	divVe.addEventListener("mouseleave", function(DtripD){
 		DtripD.target.style.backgroundColor = "blue";
+	
 	})
 }
 
-//number of squares button 
+})
