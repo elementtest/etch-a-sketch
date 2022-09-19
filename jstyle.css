@@ -1,7 +1,7 @@
 /* make a new css variable called --grid-value in root and use that variable throughout the stylesheet  */
 /* css variables must have a -- in front of them and usually the name is linked with - i.e. --grid-value --name-of-whatever-variable */
 :root {
-	--grid-value: ; 
+	--grid-value: 15; 
 }
 
 .container-grid {
@@ -9,8 +9,8 @@
 	margin: auto;
 	height: 100vh;
 	width: 100vh;
-	grid-template-rows: repeat(var(--grid-value), 10px); 
-	grid-template-columns: repeat(var(--grid-value), 10px); 
+	grid-template-rows: repeat(var(--grid-value), 1fr); 
+	grid-template-columns: repeat(var(--grid-value), 1fr); 
 	row-gap: 1px;
 	column-gap: 1px;
 	justify-content: center;
@@ -23,4 +23,12 @@
 	margin: auto;
 	margin-bottom: 20px;
 	margin-top: 20px;
+}
+
+p {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 300px;
 }
